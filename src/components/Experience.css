@@ -1,0 +1,82 @@
+.resume-timeline { position: relative; }
+
+.resume-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  padding-bottom: 2.6rem;
+  position: relative;
+}
+
+.resume-period-col { position: relative; display: flex; flex-direction: column; align-items: flex-start; }
+
+.resume-period {
+  font-weight: 600;
+  color: var(--accent-dark);
+  font-size: 0.88rem;
+  background: var(--accent-soft);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.resume-node {
+  position: absolute;
+  left: -2.2rem;
+  top: 10px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-alt);
+}
+
+.resume-row::before {
+  content: '';
+  position: absolute;
+  left: 138px;
+  top: 20px;
+  bottom: -10px;
+  width: 2px;
+  background: var(--border);
+}
+.resume-row:last-child::before { display: none; }
+
+.resume-content-col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: var(--shadow-card);
+}
+
+.resume-content-col h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.resume-company { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem; }
+.resume-company span { color: var(--text-secondary); }
+
+.resume-bullets { display: flex; flex-direction: column; gap: 0.7rem; }
+
+.resume-bullets li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.resume-bullets li::before {
+  content: '';
+  position: absolute; left: 0; top: 0.55rem;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .resume-row { grid-template-columns: 1fr; }
+  .resume-row::before, .resume-node { display: none; }
+}

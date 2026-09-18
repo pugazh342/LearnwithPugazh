@@ -1,0 +1,86 @@
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 2.6rem; }
+
+.filter-btn {
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+.filter-btn.is-active { background: var(--text-primary); color: #fff; border-color: var(--text-primary); }
+
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.7rem; }
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease;
+}
+.project-card:hover { transform: translateY(-5px); }
+
+.project-thumb {
+  position: relative;
+  height: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.2rem 1.4rem;
+}
+
+.project-thumb-tag {
+  background: rgba(255,255,255,0.9);
+  color: var(--text-primary);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.project-thumb-arrow { color: #fff; }
+
+.project-body { padding: 1.6rem 1.6rem 1.8rem; }
+
+.project-body h3 { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.7rem; }
+
+.project-description { color: var(--text-secondary); font-size: 0.93rem; line-height: 1.65; margin-bottom: 1rem; }
+
+.project-highlights { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.3rem; }
+
+.project-highlights li {
+  position: relative; padding-left: 1.1rem;
+  font-size: 0.85rem; color: var(--text-muted); line-height: 1.55;
+}
+.project-highlights li::before { content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+.project-tech { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.2rem; }
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.project-github-link:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+@media (max-width: 860px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}

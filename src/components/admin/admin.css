@@ -1,0 +1,205 @@
+.admin-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-shell {
+  min-height: 100vh;
+  background: var(--bg-alt);
+}
+
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-brand {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-user-email {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.admin-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.4rem 1.5rem 4rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.admin-tab {
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.admin-tab.is-active {
+  background: var(--text-primary);
+  color: #fff;
+  border-color: var(--text-primary);
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.8rem;
+  align-items: start;
+}
+
+.admin-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: var(--shadow-card);
+}
+
+.admin-panel h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  margin-bottom: 1.4rem;
+  color: var(--text-primary);
+}
+
+.admin-form { display: flex; flex-direction: column; gap: 1.1rem; }
+
+.admin-form label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  width: 100%;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.admin-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.admin-row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.gradient-options { display: flex; gap: 0.6rem; }
+
+.gradient-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.gradient-swatch.is-selected { border-color: var(--text-primary); }
+
+.progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  overflow: hidden;
+  margin-top: 0.6rem;
+}
+.progress-fill { height: 100%; background: var(--gradient-brand); transition: width 0.2s ease; }
+
+.admin-list { display: flex; flex-direction: column; gap: 0.9rem; max-height: 640px; overflow-y: auto; }
+
+.admin-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-alt);
+}
+
+.admin-list-item h4 { font-size: 0.94rem; color: var(--text-primary); margin-bottom: 0.3rem; }
+.admin-list-item p { font-size: 0.78rem; color: var(--text-muted); }
+
+.admin-list-empty { color: var(--text-muted); font-size: 0.88rem; padding: 1rem 0; text-align: center; }
+
+.admin-error {
+  background: #fdeceA;
+  color: #c0402f;
+  border: 1px solid #f4c3b8;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.admin-success {
+  background: var(--accent-2-soft);
+  color: var(--accent-2);
+  border: 1px solid #bfe0d5;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.seed-btn { margin-bottom: 0; }
+
+.admin-actions-row {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.clear-btn {
+  color: #c0402f;
+  border-color: #f4c3b8;
+}
+.clear-btn:hover {
+  border-color: #c0402f;
+  color: #c0402f;
+  background: #fdeceA;
+}
+
+@media (max-width: 900px) {
+  .admin-grid { grid-template-columns: 1fr; }
+}

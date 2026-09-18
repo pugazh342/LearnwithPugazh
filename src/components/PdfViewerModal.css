@@ -1,0 +1,76 @@
+.pdf-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(32, 28, 25, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.2rem;
+}
+
+.pdf-modal {
+  background: var(--surface);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 860px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.pdf-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pdf-modal-head h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.pdf-modal-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.pdf-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  background: #ece5da;
+}
+
+.pdf-canvas-container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-preview-placeholder {
+  text-align: center;
+  padding: 2rem;
+}
+
+.pdf-preview-placeholder p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.pdf-preview-buttons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .pdf-modal { height: 90vh; }
+}
