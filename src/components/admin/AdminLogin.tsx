@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ShieldCheck } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
+import { useSEO } from '../../hooks/useSEO'
 import './AdminLogin.css'
 
 export default function AdminLogin() {
@@ -11,6 +12,12 @@ export default function AdminLogin() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [submitting, setSubmitting] = useState(false)
+
+  useSEO({
+    title: 'Admin Login',
+    description: 'Admin login page for LearnwithPugazh portfolio management.',
+    url: 'https://learnwithpugazh.dev/admin/login',
+  })
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

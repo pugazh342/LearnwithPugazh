@@ -4,12 +4,22 @@ import { ArrowUpRight, ArrowLeft, Calendar, Clock, X } from 'lucide-react'
 import type { BlogPost } from '../types'
 import { subscribeToBlogPosts } from '../services/blogService'
 import SectionHeading from '../components/SectionHeading'
+import { useSEO } from '../hooks/useSEO'
 import '../components/Blog.css'
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([])
   const [loading, setLoading] = useState(true)
   const [active, setActive] = useState<BlogPost | null>(null)
+
+  useSEO({
+    title: 'Blog — Cybersecurity & AI Engineering Insights',
+    description:
+      'Technical blog by Pugazhmani K covering cybersecurity, AI/ML engineering, RAG pipelines, threat intelligence, hackathon experiences, and lessons from building security tools.',
+    keywords:
+      'cybersecurity blog, AI engineering blog, RAG pipeline, threat intelligence, LLM applications, hackathon experience, security tooling, SOC monitoring, Splunk, Python, Go, FastAPI, Pugazhmani K blog',
+    url: 'https://learnwithpugazh.dev/blog',
+  })
 
   useEffect(() => {
     const unsubscribe = subscribeToBlogPosts((data) => {
