@@ -17,13 +17,13 @@ export default function About() {
           <div className="about-photo-frame">
             <div className="about-photo">
               <img
-                src="/about.jpeg"
-                alt={personal.name}
-                className="about-photo-img"
-                width="300"
-                height="340"
-                loading="lazy"
-                decoding="async"
+              src="/about.webp"
+              alt={personal.name}
+              className="about-photo-img"
+              width="300"
+              height="340"
+              loading="lazy"
+              decoding="async"
               />
             </div>
             <div className="about-photo-badge">

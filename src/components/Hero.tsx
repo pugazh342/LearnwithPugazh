@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="blob" />
           <div className="hero-photo">
             <img
-              src="/profile.jpeg"
+              src="/profile.webp"
               alt={personal.name}
               className="hero-photo-img"
               width="280"
