@@ -39,7 +39,15 @@ export default function Hero() {
         <div className="hero-visual">
           <div className="blob" />
           <div className="hero-photo">
-            <img src="/profile.jpeg" alt={personal.name} className="hero-photo-img" />
+            <img
+              src="/profile.jpeg"
+              alt={personal.name}
+              className="hero-photo-img"
+              width="280"
+              height="280"
+              fetchPriority="high"
+              decoding="async"
+            />
           </div>
 
           <div className="floating-card card-top">
