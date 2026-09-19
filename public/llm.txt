@@ -1,0 +1,45 @@
+# Learnwithpugazh
+
+> Learnwithpugazh is an educational platform created by Pugazhmani K for learning cybersecurity, AI, networking, Linux, programming, and software development through structured learning resources, tutorials, projects, and practical guides.
+
+## Main Pages
+
+- [Home](https://learnwithpugazh.vercel.app/)
+- [Learning](https://learnwithpugazh.vercel.app/learning)
+- [Projects](https://learnwithpugazh.vercel.app/projects)
+- [Blog](https://learnwithpugazh.vercel.app/blog)
+- [About](https://learnwithpugazh.vercel.app/about)
+- [Contact](https://learnwithpugazh.vercel.app/contact)
+
+## Learning Resources
+
+Structured technical learning content covering cybersecurity, AI/ML, networking, Linux, programming, and web development.
+
+- [Cybersecurity](https://learnwithpugazh.vercel.app/learning?topic=cybersecurity)
+- [Networking](https://learnwithpugazh.vercel.app/learning?topic=networking)
+- [Python](https://learnwithpugazh.vercel.app/learning?topic=python)
+- [Web Development](https://learnwithpugazh.vercel.app/learning?topic=web-development)
+- [Artificial Intelligence](https://learnwithpugazh.vercel.app/learning?topic=ai)
+
+## Projects
+
+Security platforms, AI systems, and full-stack products built by Pugazhmani K.
+
+- [View Projects](https://learnwithpugazh.vercel.app/projects)
+
+## Blog
+
+Technical articles and insights covering cybersecurity, AI engineering, and software development.
+
+- [Read Blog](https://learnwithpugazh.vercel.app/blog)
+
+## Author
+
+Learnwithpugazh is created and maintained by Pugazhmani K.
+- [GitHub](https://github.com/pugazh342)
+- [LinkedIn](https://linkedin.com/in/pugazhmani)
+- Email: kpugazhmani21@gmail.com
+
+## Content Guidelines
+
+The website provides educational and technical content intended for learning, experimentation, and project development in cybersecurity and AI engineering.
