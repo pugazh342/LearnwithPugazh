@@ -29,8 +29,15 @@ export default function Hero() {
 
           <div className="hero-socials">
             {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="social-pill" aria-label={s.label}>
-                <s.icon size={17} />
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                className="social-pill"
+                aria-label={s.label}
+              >
+                <s.icon size={17} aria-hidden="true" />
               </a>
             ))}
           </div>

@@ -35,7 +35,7 @@ export default function Portfolio() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <Suspense fallback={<SectionLoader />}>
           <About />

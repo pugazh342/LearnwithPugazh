@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Pugazhmani K — Cybersecurity Analyst & AI Engineer | Portfolio</title>
+    <meta name="title" content="Pugazhmani K — Cybersecurity Analyst & AI Engineer | Portfolio" />
+    <meta
+      name="description"
+      content="Portfolio of Pugazhmani K — Cybersecurity Analyst & AI Engineer from Tamil Nadu, India. Specializing in IDS/IPS development, network forensics, RAG pipelines, LLM integration, and full-stack security tooling with Python, Go, FastAPI, and React."
+    />
+    <meta
+      name="keywords"
+      content="Pugazhmani K, cybersecurity analyst, AI engineer, IDS/IPS, network forensics, PCAP analysis, RAG pipeline, LLM integration, security monitoring, threat detection, Python developer, Go developer, FastAPI, React, portfolio, Tamil Nadu, India, CyberWolf, vulnerability assessment, SIEM, Splunk, malware analysis, XGBoost, container security, Docker, JWT authentication"
+    />
+    <meta name="author" content="Pugazhmani K" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a2e" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://learnwithpugazh.vercel.app" />
+    <meta property="og:title" content="Pugazhmani K — Cybersecurity Analyst & AI Engineer" />
+    <meta
+      property="og:description"
+      content="Cybersecurity Analyst & AI Engineer building defensive security tooling and intelligent AI systems — from IDS/IPS engines to RAG pipelines powered by local LLMs."
+    />
+    <meta property="og:image" content="/profile.webp" />
+    <meta property="og:site_name" content="LearnwithPugazh" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://learnwithpugazh.vercel.app" />
+    <meta name="twitter:title" content="Pugazhmani K — Cybersecurity Analyst & AI Engineer" />
+    <meta
+      name="twitter:description"
+      content="Cybersecurity Analyst & AI Engineer building defensive security tooling and intelligent AI systems."
+    />
+    <meta name="twitter:image" content="/profile.webp" />
+    <meta name="twitter:creator" content="@pugazh342" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://learnwithpugazh.vercel.app" />
+
+    <!-- Critical CSS inlined for above-the-fold -->
+    <style>
+      :root {
+        --bg: #fbf7f2;
+        --bg-alt: #f4ede2;
+        --surface: #ffffff;
+        --surface-soft: #faf6f0;
+        --border: #ece2d3;
+        --text-primary: #201c19;
+        --text-secondary: #5c554d;
+        --text-muted: #9a9187;
+        --accent: #ff6b4a;
+        --accent-dark: #e2542f;
+        --accent-soft: #ffe3d9;
+        --accent-2: #2f6f63;
+        --accent-2-soft: #dcece7;
+        --gradient-brand: linear-gradient(135deg, #ff6b4a, #ffb56b);
+        --shadow-soft: 0 20px 45px -25px rgba(32, 28, 25, 0.25);
+        --shadow-card: 0 10px 30px -18px rgba(32, 28, 25, 0.18);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text-primary); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+      a { text-decoration: none; color: inherit; }
+      .serif { font-family: 'Fraunces', serif; }
+      .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+      .accent-text { color: var(--accent); }
+      .btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.95rem 1.9rem; border-radius: 999px; font-size: 0.92rem; font-weight: 600; transition: all 0.25s ease; white-space: nowrap; text-decoration: none; }
+      .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 14px 30px -12px rgba(255, 107, 74, 0.55); }
+      .btn-outline { border: 1.5px solid var(--text-primary); color: var(--text-primary); }
+      .btn-sm { padding: 0.6rem 1.3rem; font-size: 0.84rem; }
+      .section { padding: 6.5rem 0; position: relative; }
+      .section-alt { background: var(--bg-alt); }
+      .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(251,247,242,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+      .navbar.is-scrolled { border-bottom-color: var(--border); }
+      .navbar-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .brand { font-size: 1.3rem; font-weight: 700; }
+      .hero { position: relative; padding-top: 8.5rem; overflow: hidden; }
+      .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center; padding-bottom: 4rem; }
+      .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.82rem; font-weight: 600; color: var(--accent-dark); background: var(--accent-soft); padding: 0.5rem 1rem; border-radius: 999px; margin-bottom: 1.6rem; }
+      .hero-title { font-size: clamp(2.1rem, 4vw, 3.1rem); font-weight: 600; line-height: 1.28; color: var(--text-primary); margin-bottom: 1.4rem; }
+      .hero-tagline { color: var(--text-secondary); font-size: 1.08rem; line-height: 1.8; max-width: 540px; margin-bottom: 2.2rem; }
+      .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+      .hero-socials { display: flex; gap: 0.8rem; }
+      .social-pill { width: 42px; height: 42px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid var(--border); color: var(--text-secondary); transition: all 0.2s ease; }
+      .hero-visual { position: relative; display: flex; align-items: center; justify-content: center; height: 440px; }
+      .blob { position: absolute; width: 340px; height: 340px; background: var(--gradient-brand); border-radius: 62% 38% 55% 45% / 48% 52% 48% 52%; opacity: 0.9; }
+      .hero-photo { position: relative; width: 280px; height: 280px; border-radius: 50%; background: var(--surface); border: 6px solid var(--bg); box-shadow: var(--shadow-soft); overflow: hidden; }
+      .hero-photo-img { width: 100%; height: 100%; object-fit: cover; }
+      .hero-stats-bar { border-top: 1px solid var(--border); background: var(--surface-soft); }
+      .hero-stats-row { display: flex; justify-content: space-between; padding: 2rem 1.5rem; flex-wrap: wrap; gap: 1.5rem; }
+      .hero-stat { display: flex; flex-direction: column; align-items: flex-start; }
+      .hero-stat-value { font-size: 1.9rem; font-weight: 700; color: var(--accent); }
+      .hero-stat-label { font-size: 0.84rem; color: var(--text-muted); margin-top: 0.2rem; }
+      @media (max-width: 960px) {
+        .hero-inner { grid-template-columns: 1fr; }
+        .hero-visual { order: -1; height: 320px; margin-bottom: 1rem; }
+        .blob { width: 250px; height: 250px; }
+        .hero-photo { width: 210px; height: 210px; }
+      }
+    </style>
+
+    <!-- Fonts - Deferred completely via media="print" trick (CSP-safe) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Preload LCP image with highest priority -->
+    <link rel="preload" as="image" href="/profile.webp" fetchpriority="high" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Learnwithpugazh",
+          "url": "https://learnwithpugazh.vercel.app/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://learnwithpugazh.vercel.app/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Pugazhmani K",
+          "url": "https://learnwithpugazh.vercel.app",
+          "image": "https://learnwithpugazh.vercel.app/profile.webp",
+          "jobTitle": ["Cybersecurity Analyst", "AI Engineer"],
+          "description": "Cybersecurity Analyst & AI Engineer specializing in IDS/IPS development, network forensics, RAG pipelines, and full-stack security tooling.",
+          "email": "kpugazhmani21@gmail.com",
+          "telephone": "+91-6374344424",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villupuram",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://github.com/pugazh342",
+            "https://linkedin.com/in/pugazhmani"
+          ],
+          "knowsAbout": [
+            "Cybersecurity",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "IDS/IPS Development",
+            "Network Forensics",
+            "PCAP Analysis",
+            "RAG Pipelines",
+            "Large Language Models",
+            "Python Programming",
+            "Go Programming",
+            "FastAPI",
+            "React",
+            "Docker",
+            "SIEM",
+            "Splunk",
+            "Malware Analysis",
+            "Vulnerability Assessment"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "SKP Engineering College",
+            "department": "Computer Science and Engineering (Cybersecurity)"
+          },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "AI Department Lead",
+            "occupationLocation": {
+              "@type": "Country",
+              "name": "IN"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-3FzScDPZ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/framer-BwLpCJQ6.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DG5HtdPS.js">
+    <link rel="modulepreload" crossorigin href="/assets/firebase-BFDo2rhp.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BAp8lnyu.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="root"></div>
+  </body>
+</html>

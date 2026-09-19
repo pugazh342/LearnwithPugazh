@@ -15,7 +15,7 @@ export default function Footer() {
             <p>Cybersecurity Analyst &amp; AI Engineer building secure, intelligent software.</p>
           </div>
 
-          <ul className="footer-links">
+          <ul className="footer-links" aria-label="Footer navigation">
             {navLinks.map((link) => (
               <li key={link.href}><a href={link.href}>{link.label}</a></li>
             ))}
@@ -32,8 +32,15 @@ export default function Footer() {
 
           <div className="footer-socials">
             {socialLinks.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="social-pill">
-                <s.icon size={17} />
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                className="social-pill"
+                aria-label={s.label}
+              >
+                <s.icon size={17} aria-hidden="true" />
               </a>
             ))}
           </div>

@@ -1,0 +1,25 @@
+# Pugazhmani Portfolio — Agentic Browsing & SEO Guide
+
+Site: https://pugazhmani-portfolio (Vercel / Firebase Hosting)
+Purpose: Portfolio for Software Developer, AI Engineer, Security Engineer, Ethical Hacker
+
+## Key Sections (for agent navigation)
+- / — Hero, About, Skills, Experience, Projects, Achievements, Blog, Contact
+- /blog — Markdown-style blog posts
+- /learning — PDF study materials (pdf.js inline viewer)
+- /admin — Blog & learning content management (Firebase Auth protected)
+
+## Tech Stack
+React 18 + TypeScript + Vite, Firebase (Firestore, Auth), Framer Motion, Lucide React, pdfjs-dist
+
+## SEO / Agent Directives
+- Responsive, mobile-first, lazy-loaded sections
+- Inline critical CSS, deferred fonts, WebP images
+- Structured data: WebSite + Person schema, CSP + HSTS headers
+- Skip link for accessibility; prefers-reduced-motion support
+- Firebase security rules at /firestore.rules; storage rules at /storage.rules
+
+## Crawl / Index Instructions
+Index: yes (main portfolio, blog, projects)
+No-index: admin routes, firebase config endpoints
+Use sitemap and meta tags for agentic discovery.

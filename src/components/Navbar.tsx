@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <header className={`navbar ${scrolled ? 'is-scrolled' : ''}`}>
-      <nav className="navbar-inner container">
+      <nav className="navbar-inner container" aria-label="Main navigation">
         <a href="#home" className="brand serif" onClick={close}>
           {personal.name.split(' ')[0]}<span className="accent-text">.</span>
         </a>
