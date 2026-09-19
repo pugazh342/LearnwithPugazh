@@ -16,7 +16,7 @@ export default function Portfolio() {
       'Portfolio of Pugazhmani K — Cybersecurity Analyst & AI Engineer from Tamil Nadu, India. Building defensive security tooling and AI-driven systems including IDS/IPS engines, PCAP forensics platforms, and RAG pipelines powered by local LLMs.',
     keywords:
       'Pugazhmani K, cybersecurity analyst, AI engineer, IDS/IPS developer, network forensics, PCAP analysis, RAG pipeline, LLM integration, Python developer, Go developer, FastAPI, React, security monitoring, threat detection, portfolio, Tamil Nadu, India',
-    url: 'https://learnwithpugazh.dev',
+    url: 'https://learnwithpugazh.vercel.app',
   })
 
   return (

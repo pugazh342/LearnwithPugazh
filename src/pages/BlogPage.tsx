@@ -18,7 +18,7 @@ export default function BlogPage() {
       'Technical blog by Pugazhmani K covering cybersecurity, AI/ML engineering, RAG pipelines, threat intelligence, hackathon experiences, and lessons from building security tools.',
     keywords:
       'cybersecurity blog, AI engineering blog, RAG pipeline, threat intelligence, LLM applications, hackathon experience, security tooling, SOC monitoring, Splunk, Python, Go, FastAPI, Pugazhmani K blog',
-    url: 'https://learnwithpugazh.dev/blog',
+    url: 'https://learnwithpugazh.vercel.app/blog',
   })
 
   useEffect(() => {

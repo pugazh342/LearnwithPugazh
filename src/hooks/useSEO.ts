@@ -10,7 +10,7 @@ interface SEOData {
 }
 
 const SITE_NAME = 'LearnwithPugazh'
-const DEFAULT_URL = 'https://learnwithpugazh.dev'
+const DEFAULT_URL = 'https://learnwithpugazh.vercel.app'
 const DEFAULT_IMAGE = '/profile.jpeg'
 
 export function useSEO({

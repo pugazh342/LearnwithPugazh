@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://learnwithpugazh.dev/sitemap.xml
+Sitemap: https://learnwithpugazh.vercel.app/sitemap.xml

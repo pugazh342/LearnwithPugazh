@@ -29,7 +29,7 @@ export default function LearningPage() {
       'Free cybersecurity and AI/ML learning resources by Pugazhmani K. Study notes on SIEM, Splunk, RAG pipelines, Wireshark PCAP analysis, IDS/IPS development, XGBoost malware detection, and more.',
     keywords:
       'cybersecurity learning resources, SIEM tutorial, Splunk fundamentals, RAG pipeline tutorial, Wireshark PCAP analysis, IDS IPS development, malware detection XGBoost, AI study notes, Python programming, Go concurrency, FastAPI tutorial, LLM integration, vector database ChromaDB',
-    url: 'https://learnwithpugazh.dev/learning',
+    url: 'https://learnwithpugazh.vercel.app/learning',
   })
 
   useEffect(() => {

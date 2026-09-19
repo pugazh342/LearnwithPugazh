@@ -16,7 +16,7 @@ export default function AdminLogin() {
   useSEO({
     title: 'Admin Login',
     description: 'Admin login page for LearnwithPugazh portfolio management.',
-    url: 'https://learnwithpugazh.dev/admin/login',
+    url: 'https://learnwithpugazh.vercel.app/admin/login',
   })
 
   const handleSubmit = async (e: React.FormEvent) => {
