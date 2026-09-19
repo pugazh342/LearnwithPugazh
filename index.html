@@ -108,80 +108,98 @@
       }
     </style>
 
-    <!-- Fonts - Deferred completely -->
+    <!-- Fonts - Deferred completely via media="print" trick (CSP-safe) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script>
-      // Defer font loading until after page load
-      window.addEventListener('load', function() {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap';
-        document.head.appendChild(link);
-      });
-    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- Preload LCP image with highest priority -->
-    <link rel="preload" as="image" href="/profile.jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/profile.webp" fetchpriority="high" />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Pugazhmani K",
-      "url": "https://learnwithpugazh.vercel.app",
-      "image": "https://learnwithpugazh.vercel.app/profile.jpeg",
-      "jobTitle": ["Cybersecurity Analyst", "AI Engineer"],
-      "description": "Cybersecurity Analyst & AI Engineer specializing in IDS/IPS development, network forensics, RAG pipelines, and full-stack security tooling.",
-      "email": "kpugazhmani21@gmail.com",
-      "telephone": "+91-6374344424",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Villupuram",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://github.com/pugazh342",
-        "https://linkedin.com/in/pugazhmani"
-      ],
-      "knowsAbout": [
-        "Cybersecurity",
-        "Artificial Intelligence",
-        "Machine Learning",
-        "IDS/IPS Development",
-        "Network Forensics",
-        "PCAP Analysis",
-        "RAG Pipelines",
-        "Large Language Models",
-        "Python Programming",
-        "Go Programming",
-        "FastAPI",
-        "React",
-        "Docker",
-        "SIEM",
-        "Splunk",
-        "Malware Analysis",
-        "Vulnerability Assessment"
-      ],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "SKP Engineering College",
-        "department": "Computer Science and Engineering (Cybersecurity)"
-      },
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "AI Department Lead",
-        "occupationLocation": {
-          "@type": "Country",
-          "name": "IN"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Learnwithpugazh",
+          "url": "https://learnwithpugazh.vercel.app/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://learnwithpugazh.vercel.app/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Pugazhmani K",
+          "url": "https://learnwithpugazh.vercel.app",
+          "image": "https://learnwithpugazh.vercel.app/profile.webp",
+          "jobTitle": ["Cybersecurity Analyst", "AI Engineer"],
+          "description": "Cybersecurity Analyst & AI Engineer specializing in IDS/IPS development, network forensics, RAG pipelines, and full-stack security tooling.",
+          "email": "kpugazhmani21@gmail.com",
+          "telephone": "+91-6374344424",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Villupuram",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://github.com/pugazh342",
+            "https://linkedin.com/in/pugazhmani"
+          ],
+          "knowsAbout": [
+            "Cybersecurity",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "IDS/IPS Development",
+            "Network Forensics",
+            "PCAP Analysis",
+            "RAG Pipelines",
+            "Large Language Models",
+            "Python Programming",
+            "Go Programming",
+            "FastAPI",
+            "React",
+            "Docker",
+            "SIEM",
+            "Splunk",
+            "Malware Analysis",
+            "Vulnerability Assessment"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "SKP Engineering College",
+            "department": "Computer Science and Engineering (Cybersecurity)"
+          },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "AI Department Lead",
+            "occupationLocation": {
+              "@type": "Country",
+              "name": "IN"
+            }
+          }
         }
-      }
+      ]
     }
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
