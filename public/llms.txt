@@ -13,13 +13,13 @@
 
 ## Learning Resources
 
-Structured technical learning content covering cybersecurity, AI/ML, networking, Linux, programming, and web development.
+Structured technical learning content covering cybersecurity, AI/ML, programming, tools & DevOps. Browse by category filter on the Learning page.
 
-- [Cybersecurity](https://learnwithpugazh.vercel.app/learning?topic=cybersecurity)
-- [Networking](https://learnwithpugazh.vercel.app/learning?topic=networking)
-- [Python](https://learnwithpugazh.vercel.app/learning?topic=python)
-- [Web Development](https://learnwithpugazh.vercel.app/learning?topic=web-development)
-- [Artificial Intelligence](https://learnwithpugazh.vercel.app/learning?topic=ai)
+- [Cybersecurity](https://learnwithpugazh.vercel.app/learning?category=Cybersecurity)
+- [AI & ML](https://learnwithpugazh.vercel.app/learning?category=AI%20%26%20ML)
+- [Programming](https://learnwithpugazh.vercel.app/learning?category=Programming)
+- [Tools & DevOps](https://learnwithpugazh.vercel.app/learning?category=Tools%20%26%20DevOps)
+- [All Resources](https://learnwithpugazh.vercel.app/learning)
 
 ## Projects
 
@@ -33,11 +33,22 @@ Technical articles and insights covering cybersecurity, AI engineering, and soft
 
 - [Read Blog](https://learnwithpugazh.vercel.app/blog)
 
+## Admin Panel
+
+Protected content management panel (Firebase Auth required) for managing blog posts and learning topics.
+
+- [Admin Login](https://learnwithpugazh.vercel.app/admin/login)
+- [Admin Dashboard](https://learnwithpugazh.vercel.app/admin)
+
+## PDF Learning Resources
+
+Upload and view PDF study materials directly in the browser using an inline PDF viewer (pdf.js / pdfjs-dist).
+
 ## Author
 
 Learnwithpugazh is created and maintained by Pugazhmani K.
 - [GitHub](https://github.com/pugazh342)
-- [LinkedIn](https://linkedin.com/in/pugazhmani)
+- [LinkedIn](https://www.linkedin.com/in/pugazhmanik/)
 - Email: kpugazhmani21@gmail.com
 
 ## Content Guidelines
