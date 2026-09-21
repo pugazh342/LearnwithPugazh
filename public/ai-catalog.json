@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "name": "Learnwithpugazh",
+  "description": "Portfolio of Pugazhmani K — Cybersecurity Analyst & AI Engineer. Specializing in IDS/IPS development, network forensics, RAG pipelines, LLM integration, and full-stack security tooling with Python, Go, FastAPI, and React.",
+  "homepage": "https://learnwithpugazh.vercel.app",
+  "author": {
+    "name": "Pugazhmani K",
+    "email": "kpugazhmani21@gmail.com",
+    "url": "https://learnwithpugazh.vercel.app"
+  },
+  "resources": [
+    {
+      "type": "portfolio",
+      "name": "Projects",
+      "url": "https://learnwithpugazh.vercel.app/projects",
+      "description": "Security platforms, AI systems, and full-stack products built by Pugazhmani K"
+    },
+    {
+      "type": "learning",
+      "name": "Learning Resources",
+      "url": "https://learnwithpugazh.vercel.app/learning",
+      "description": "Structured technical learning content covering cybersecurity, AI/ML, programming, tools & DevOps"
+    },
+    {
+      "type": "blog",
+      "name": "Blog",
+      "url": "https://learnwithpugazh.vercel.app/blog",
+      "description": "Technical articles and insights covering cybersecurity, AI engineering, and software development"
+    },
+    {
+      "type": "about",
+      "name": "About",
+      "url": "https://learnwithpugazh.vercel.app/about",
+      "description": "Background, experience, and skills of Pugazhmani K"
+    },
+    {
+      "type": "contact",
+      "name": "Contact",
+      "url": "https://learnwithpugazh.vercel.app/contact",
+      "description": "Get in touch for collaborations, consulting, or opportunities"
+    }
+  ],
+  "categories": [
+    "Cybersecurity",
+    "AI & ML",
+    "Programming",
+    "Tools & DevOps"
+  ],
+  "keywords": [
+    "cybersecurity",
+    "AI engineer",
+    "IDS/IPS",
+    "network forensics",
+    "RAG pipelines",
+    "LLM integration",
+    "Python",
+    "Go",
+    "FastAPI",
+    "React",
+    "portfolio"
+  ]
+}

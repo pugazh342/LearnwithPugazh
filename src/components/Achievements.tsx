@@ -26,7 +26,7 @@ export default function Achievements() {
               transition={{ duration: 0.5, delay: idx * 0.07 }}
             >
               <div className="achievement-icon"><item.icon size={20} /></div>
-              <h4>{item.title}</h4>
+              <h3>{item.title}</h3>
               <p>{item.description}</p>
             </motion.div>
           ))}
