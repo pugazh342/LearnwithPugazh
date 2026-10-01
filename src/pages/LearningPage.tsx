@@ -59,15 +59,19 @@ export default function LearningPage() {
           />
 
           <div className="filter-bar">
-            {learningCategories.map((c) => (
-              <button
-                key={c}
-                className={`filter-btn ${activeCategory === c ? 'is-active' : ''}`}
-                onClick={() => setActiveCategory(c)}
-              >
-                {c}
-              </button>
-            ))}
+            {learningCategories.map((c) => {
+              const count = c === 'All' ? topics.length : topics.filter((t) => t.category === c).length
+              return (
+                <button
+                  key={c}
+                  className={`filter-btn ${activeCategory === c ? 'is-active' : ''}`}
+                  onClick={() => setActiveCategory(c)}
+                >
+                  <span>{c}</span>
+                  {count > 0 && <span className="filter-count">{count}</span>}
+                </button>
+              )
+            })}
           </div>
 
           {loading && <p className="learning-empty">Loading resources...</p>}

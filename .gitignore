@@ -33,3 +33,15 @@ dist-ssr
 
 # Debug
 error/
+
+# Tooling / local artifacts
+.lighthouse-tmp/
+
+# Firebase service account keys - never commit these
+*service-account*.json
+*serviceaccount*.json
+*firebase-adminsdk*.json
+firebase-adminsdk-*.json
+
+.vercel
+.env*

@@ -2,11 +2,25 @@ rules_version = '2';
 service firebase.storage {
   match /b/{bucket}/o {
 
-    // Learning PDFs - public read, authenticated write
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'kpugazhmani21@gmail.com'
+        && 'adminMfa' in request.auth.token
+        && request.auth.token.adminMfa == true;
+    }
+
+    // Learning PDFs - public read, admin-only write
     match /learning-pdfs/{allPaths=**} {
       allow read: if true;
-      allow write: if request.resource.size < 10 * 1024 * 1024
-                   && request.resource.contentType == 'application/pdf';
+      allow create, update: if isAdmin()
+        && request.resource.size < 10 * 1024 * 1024
+        && request.resource.contentType == 'application/pdf';
+      allow delete: if isAdmin();
+    }
+
+    // Deny everything else by default.
+    match /{allPaths=**} {
+      allow read, write: if false;
     }
   }
 }

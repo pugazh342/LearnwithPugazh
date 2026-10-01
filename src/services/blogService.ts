@@ -10,15 +10,33 @@ import {
 } from 'firebase/firestore'
 import { db } from '../firebase/config'
 import type { BlogPost } from '../types'
+import { getDefaultBlogPosts } from './seedService'
 
 const COLLECTION = 'blogPosts'
 
 export function subscribeToBlogPosts(callback: (posts: BlogPost[]) => void) {
-  const q = query(collection(db, COLLECTION), orderBy('createdAt', 'desc'))
-  return onSnapshot(q, (snapshot) => {
-    const posts = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }) as BlogPost)
-    callback(posts)
-  })
+  try {
+    const q = query(collection(db, COLLECTION), orderBy('createdAt', 'desc'))
+    return onSnapshot(
+      q,
+      (snapshot) => {
+        if (snapshot.empty) {
+          callback(getDefaultBlogPosts())
+        } else {
+          const posts = snapshot.docs.map((d) => ({ id: d.id, ...d.data() }) as BlogPost)
+          callback(posts)
+        }
+      },
+      (error) => {
+        console.warn('Firestore blogPosts error, falling back to starter posts:', error.message)
+        callback(getDefaultBlogPosts())
+      }
+    )
+  } catch (err) {
+    console.warn('Failed to subscribe to blogPosts:', err)
+    callback(getDefaultBlogPosts())
+    return () => {}
+  }
 }
 
 export async function addBlogPost(data: Omit<BlogPost, 'id' | 'createdAt'>) {
@@ -38,3 +56,4 @@ export async function deleteBlogPost(id: string) {
     throw error
   }
 }
+

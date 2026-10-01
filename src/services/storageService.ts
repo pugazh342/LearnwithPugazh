@@ -22,6 +22,7 @@ export async function uploadPdf(
   return { dataUrl }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function deletePdf(_path: string) {
   // No-op: PDFs are stored in Firestore documents, deleted with the document
 }

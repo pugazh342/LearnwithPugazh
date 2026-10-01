@@ -7,10 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "typecheck": "tsc -b && tsc -p tsconfig.server.json",
+    "test:rules": "firebase emulators:exec --only firestore --project learnwithpugazh-4182d \"node rules.test.mjs\"",
+    "preview": "vite preview",
+    "deploy:rules": "npx -y firebase-tools deploy --only firestore:rules --project learnwithpugazh-4182d"
   },
   "dependencies": {
     "firebase": "^12.19.0",
+    "firebase-admin": "^13.10.0",
     "framer-motion": "^11.2.10",
     "lucide-react": "^0.400.0",
     "pdfjs-dist": "^6.3.289",
@@ -20,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@firebase/rules-unit-testing": "^5.0.2",
     "@types/node": "^24.13.3",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.66",

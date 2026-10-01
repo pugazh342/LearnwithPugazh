@@ -1,0 +1,11 @@
+node_modules
+dist
+.lighthouse-tmp
+.vercel
+service-account*.json
+*firebase-adminsdk*.json
+.env
+.env.*
+*.local
+error
+.git
