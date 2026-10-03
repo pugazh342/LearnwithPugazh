@@ -1,0 +1,69 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Learn with Pugazhmani",
+    "identifier": "https://learnwithpugazh.vercel.app/",
+    "documentationUrl": "https://learnwithpugazh.vercel.app/about"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:learnwithpugazh.vercel.app:website:portfolio",
+      "displayName": "Learn with Pugazhmani",
+      "type": "text/html",
+      "url": "https://learnwithpugazh.vercel.app/",
+      "description": "Technical portfolio and knowledge resource covering cybersecurity, artificial intelligence, software development, networking, and security engineering.",
+      "tags": [
+        "cybersecurity",
+        "artificial intelligence",
+        "software development",
+        "network security",
+        "AI engineering",
+        "programming"
+      ],
+      "capabilities": [
+        "technical-information",
+        "cybersecurity-information",
+        "AI-information",
+        "software-development-information"
+      ],
+      "representativeQueries": [
+        "What cybersecurity projects has Pugazhmani built?",
+        "What cybersecurity and AI topics does Learn with Pugazhmani cover?",
+        "What software and security projects are available on Learn with Pugazhmani?"
+      ],
+      "version": "1.0"
+    }
+  ],
+  "resources": [
+    {
+      "type": "portfolio",
+      "name": "Projects",
+      "url": "https://learnwithpugazh.vercel.app/projects",
+      "description": "Security platforms, AI systems, and full-stack products built by Pugazhmani K"
+    },
+    {
+      "type": "learning",
+      "name": "Learning Resources",
+      "url": "https://learnwithpugazh.vercel.app/learning",
+      "description": "Structured technical learning content covering cybersecurity, AI/ML, programming, tools & DevOps"
+    },
+    {
+      "type": "blog",
+      "name": "Blog",
+      "url": "https://learnwithpugazh.vercel.app/blog",
+      "description": "Technical articles and insights covering cybersecurity, AI engineering, and software development"
+    },
+    {
+      "type": "about",
+      "name": "About",
+      "url": "https://learnwithpugazh.vercel.app/about",
+      "description": "Background, experience, and skills of Pugazhmani K"
+    },
+    {
+      "type": "contact",
+      "name": "Contact",
+      "url": "https://learnwithpugazh.vercel.app/contact",
+      "description": "Get in touch for collaborations, consulting, or opportunities"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:learnwithpugazh.vercel.app:website:portfolio",
+      "displayName": "Learn with Pugazhmani",
+      "type": "text/html",
+      "url": "https://learnwithpugazh.vercel.app/",
+      "description": "Technical portfolio and knowledge resource covering cybersecurity, artificial intelligence, software development, networking, and security engineering.",
+      "tags": [
+        "cybersecurity",
+        "artificial intelligence",
+        "software development",
+        "network security",
+        "AI engineering",
+        "programming"
+      ],
+      "capabilities": [
+        "technical-information",
+        "cybersecurity-information",
+        "AI-information",
+        "software-development-information"
+      ],
+      "representativeQueries": [
+        "What cybersecurity projects has Pugazhmani built?",
+        "What cybersecurity and AI topics does Learn with Pugazhmani cover?",
+        "What software and security projects are available on Learn with Pugazhmani?"
+      ],
+      "version": "1.0"
+    }
+  ]
+}
