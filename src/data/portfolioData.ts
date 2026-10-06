@@ -76,7 +76,7 @@ export const heroStats: Stat[] = [
 export const quickFacts: QuickFact[] = [
   { icon: MapPin, label: 'Location', value: 'Villupuram, Tamil Nadu' },
   { icon: Shield, label: 'Focus', value: 'Cybersecurity + AI Engineering' },
-  { icon: Server, label: 'Role', value: 'CTO, AI Department — CyberWolf' },
+  { icon: Server, label: 'Role', value: 'Former CTO, AI Department' },
   { icon: Phone, label: 'Reach', value: '+91-6374344424' },
 ]
 
@@ -151,7 +151,7 @@ export const experience: ExperienceEntry[] = [
   {
     company: 'CyberWolf',
     summary:
-      'Security & AI engineering collective focused on defensive tooling, threat research, and applied AI systems.',
+      'Former security & AI engineering collective (2024 – 2026) focused on defensive tooling, threat research, and applied AI systems — no longer associated with the team.',
     roles: [
       { title: 'CTO — AI Department', period: '2024 – 2026' },
       { title: 'Cybersecurity Analyst & Developer', period: 'Present' },

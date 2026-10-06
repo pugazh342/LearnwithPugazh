@@ -11,7 +11,7 @@ export default function Experience() {
           index="03"
           eyebrow="Career Path"
           title="Experience"
-          description="Where I've applied security engineering and AI development to real problems."
+          description="Past roles where I applied security engineering and AI development to real problems."
         />
 
         <div className="resume-timeline">
@@ -31,7 +31,11 @@ export default function Experience() {
                 </div>
                 <div className="resume-content-col">
                   <h3>{role.title}</h3>
-                  <p className="resume-company">{entry.company} — <span>{entry.summary}</span></p>
+                  {rIdx === 0 && (
+                    <p className="resume-company">
+                      {entry.company} — <span>{entry.summary}</span>
+                    </p>
+                  )}
                   {rIdx === 0 && (
                     <ul className="resume-bullets">
                       {entry.bullets.map((b) => (

@@ -65,11 +65,6 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="floating-card card-bottom">
-            <strong>CTO</strong>
-            <span>AI Department — CyberWolf</span>
-          </div>
-
           <div className="dot-pattern" />
         </div>
       </div>
