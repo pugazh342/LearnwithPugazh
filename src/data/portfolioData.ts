@@ -41,7 +41,7 @@ export const personal = {
   tagline:
     'I build defensive security tooling and AI-driven systems — from IDS/IPS engines and PCAP forensics platforms to RAG pipelines powered by local LLMs.',
   summary:
-    "Final-year Computer Science (Cybersecurity) student and AI engineering leader with hands-on experience across security monitoring, network forensics, IDS/IPS development, and LLM/RAG-based automation. Comfortable owning a problem end-to-end — from threat research and detection engineering to shipping production-ready backends and interfaces with Python, Go, FastAPI, and React. Currently leading CyberWolf's AI Department, translating research into deployable, security-aware software.",
+    "Final-year Computer Science (Cybersecurity) student and AI engineering leader with hands-on experience across security monitoring, network forensics, IDS/IPS development, and LLM/RAG-based automation. Comfortable owning a problem end-to-end — from threat research and detection engineering to shipping production-ready backends and interfaces with Python, Go, FastAPI, and React. Currently Working in AI Department, translating research into deployable, security-aware software.",
   resumeUrl: '/Pugazhmani_Cybersecurity_Resume.pdf',
 }
 
